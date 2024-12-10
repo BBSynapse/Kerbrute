@@ -5,7 +5,7 @@ Ein Tool zum schnellen Erzwingen und Aufzählen gültiger Active Directory-Konte
 Das Bruteforcing von Windows-Passwörtern mit Kerberos ist viel schneller als jeder andere mir bekannte Ansatz und potenziell heimlicher, da Fehler bei der Vorauthentifizierung nicht das "traditionelle" Ereignis **4625** (Ein Konto konnte sich nicht anmelden) auslösen. Mit Kerberos können Sie einen Benutzernamen validieren oder eine Anmeldung testen, indem Sie nur einen UDP-Frame an den KDC (Domain Controller) senden. 
 
 ## Installation
-Du kannst das letzte [Release downloaden](https://github.com/ropnop/kerbrute/releases/tag/latest) oder nachfolgend auch direkt mit Go installieren:
+Du kannst das letzte [Release downloaden](https://github.com/BBSynapse/Kerbrute/releases/tag/kerbrute) oder nachfolgend auch direkt mit Go installieren:
 
 ```
 $ go get github.com/ropnop/kerbrute
