@@ -9,6 +9,20 @@ Das Bruteforcing von Windows-Passwörtern mit Kerberos ist viel schneller als je
 ### User Enumeration 
 ```
 kerbrute_linux_amd64 userenum -d {DOMAIN} --dc {RHOST} /usr/share/seclists/Usernames/xato-net-10-million-usernames.txt  
+    __             __               __
+   / /_____  _____/ /_  _______  __/ /____
+  / //_/ _ \/ ___/ __ \/ ___/ / / / __/ _ \
+ / ,< /  __/ /  / /_/ / /  / /_/ / /_/  __/
+/_/|_|\___/_/  /_.___/_/   \__,_/\__/\___/
+
+Version: dev (43f9ca1) - 03/06/19 - Ronnie Flathers @ropnop
+
+2019/03/06 21:28:04 >  Using KDC(s):
+2019/03/06 21:28:04 >   {DOMAIN}:88
+
+2019/03/06 21:28:04 >  [+] VALID USERNAME:       amata@{DOMAIN}
+2019/03/06 21:28:04 >  [+] VALID USERNAME:       thoffman@{DOMAIN}
+2019/03/06 21:28:04 >  Done! Tested 1001 usernames (2 valid) in 0.425 seconds
 ```
 ### Password Spraying
 ```
