@@ -8,10 +8,9 @@ Das Bruteforcing von Windows-Passwörtern mit Kerberos ist viel schneller als je
 Du kannst das letzte [Release downloaden](https://github.com/BBSynapse/Kerbrute/releases/tag/kerbrute) oder nachfolgend auch direkt mit Go installieren:
 
 ```
-$ go get github.com/ropnop/kerbrute
+$ go get github.com/BBSynapse/kerbrute
 ```
-
-With the repository cloned, you can also use the Make file to compile for common architectures:
+Wenn das Repository geklont ist, können Sie auch die Make-Datei verwenden, um es für die gängigen Architekturen zu kompilieren:
 
 ```
 $ make help
@@ -38,4 +37,20 @@ $ ls dist/
 kerbrute_darwin_386        kerbrute_linux_386         kerbrute_windows_386.exe
 kerbrute_darwin_amd64      kerbrute_linux_amd64       kerbrute_windows_amd64.exe
 ```
+### Kopieren der Versionen nach **/opt/kerbrute**
 
+```hl:1,2
+sudo mkdir /opt/kerbrute
+sudo cp <Verzeichnis mit den Kerbrutedateien> /opt/kerbrute
+```
+### PATH Variable in Kali  ~/.zshrc setzen
+
+```hl:1
+export PATH=$PATH:/opt/kerbrute
+```
+
+Aktualisieren der PATH-Variablen
+
+```hl:1
+source ./.zshrc 
+```
