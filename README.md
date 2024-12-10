@@ -5,7 +5,7 @@ Das Bruteforcing von Windows-Passwörtern mit Kerberos ist viel schneller als je
 ## Installation
 
 ```hl:1
-$ go get github.com/ropnop/kerbrute
+$ go get github.com/bbsynapse/kerbrute
 ```
 Kompilieren der Version
 
